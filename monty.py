@@ -1,6 +1,6 @@
 import sys
 import discord
-TOKEN = sys.argv[1]
+import os
 PREFIX = 'm;'
 
 client = discord.Client()
@@ -19,4 +19,4 @@ async def on_message(message):
     elif message.content.lower().startswith(PREFIX):
         await message.channel.send('test')
 
-client.run(TOKEN)
+client.run(os.environ['BOT_TOKEN'])
