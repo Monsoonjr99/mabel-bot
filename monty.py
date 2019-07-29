@@ -16,6 +16,8 @@ async def on_message(message):
 
     if message.content.lower().startswith('hello mabel'):
         await message.channel.send('Hello!')
+    elif message.content.lower().startswith(PREFIX+'hype'):
+        await message.channel.send('Hype is a subtropical depression!')
     elif message.content.lower().startswith(PREFIX):
         await message.channel.send('test')
 
