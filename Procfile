@@ -1,1 +1,1 @@
-worker: py monty.py
+worker: python monty.py
