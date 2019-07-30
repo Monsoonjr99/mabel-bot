@@ -2,7 +2,7 @@ import sys
 import discord
 import os
 PREFIX = 'm;'
-VERSION = 'v20190730a'
+VERSION = 'v20190730b'
 
 client = discord.Client()
 
@@ -22,7 +22,7 @@ async def on_message(message):
         args = cmd[1:]
         cmd = cmd[0].lower()
         if cmd=='version':
-            await message.channel.send('My version is ',VERSION)
+            await message.channel.send('My version is %s'%VERSION)
         elif cmd=='hype':
             await message.channel.send('Hype is a subtropical depression!')
         elif cmd=='monsoon':
