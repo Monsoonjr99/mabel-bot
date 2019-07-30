@@ -1,5 +1,7 @@
 About: A silly Discord bot made by Monsoonjr99 for his guilds and the Hypothetical Hurricanes Wiki Discord guild
 
+v20190730c:
+    * Made the 'm;monsoon' command more minty
 v20190730b:
     * Fixed version command
 v20190730a:
