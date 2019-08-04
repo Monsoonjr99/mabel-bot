@@ -3,7 +3,7 @@ import discord
 import os
 import random
 PREFIX = 'm;'
-VERSION = 'v20190731a'
+VERSION = 'v20190804a'
 
 random.seed()
 
@@ -37,5 +37,9 @@ async def on_message(message):
             await message.channel.send('A very silly person who is currently {}% high on mints'.format(mintiness))
         elif cmd=='sm':
             await message.channel.send('Dipper')
+        elif cmd=='dmmepls':
+            if message.author.dm_channel == None:
+                await message.author.create_dm()
+            await message.author.dm_channel.send('Hello {}'.format(message.author.name))
 
 client.run(os.environ['BOT_TOKEN'])
